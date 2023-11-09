@@ -15,7 +15,7 @@ This is the offical codebase for paper:
 We recommend using anaconda to build a virtual environment to test our codes.
 
 ```bash
-git clone <github-repo-link.git>
+git clone https://github.com/Roihn/SABM.git
 cd sabm
 conda create -n sabm python=3.10
 conda activate sabm
@@ -52,7 +52,7 @@ Two options are prepared for you to easily enter your api key with our codebase.
 To reproduce the results in the paper, please run the following command.
 
 ```bash
-python main.py --task <task_id>
+python main_emergency_evacuation.py --task <task_id>
 ```
 
 The `<task_id>` can be one of the following options: [1, 2, 3, 4]. Each task id corresponds to a specific case study in the paper.
@@ -60,13 +60,21 @@ The `<task_id>` can be one of the following options: [1, 2, 3, 4]. Each task id 
 Additionally, if you would like to specify a seed, the number of humans, and add obstacles in the environment, you may want to run the following command.
 
 ```bash
-python main.py --task <task_id> --seed <seed> --num_humans <num_humans> --need_obstacle
-``````
+python main_emergency_evacuation.py --task <task_id> --seed <seed> --num_humans <num_humans> --need_obstacle
+```
 
 > [!WARNING]  
 > This part of experiments consumes around $40 per trial because of the openai api usage. Please make sure you have enough allowance and have properly raise the usage limit before you test the code.
 
 
+
+### Plea Bargaining
+
+Coming soon...
+
+### Firm Pricing Competition
+
+Coming soon...
 
 ## Citation
 

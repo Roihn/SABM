@@ -495,7 +495,7 @@ class EscapeSociety(Society):
             # get communicate prompt
             communicate_samples = n_closest_messages(agent, communicate_list, threshold_dist=self.agent_chat_range)
             prompt_communicate = f"{self.env_prompt}\n" + agent.form_communication_stage(agent.persona, exit_data, communicate_samples)
-            print(f"round {self.round} agent {agent.id} communicate prompt: {prompt_communicate}")
+            # print(f"round {self.round} agent {agent.id} communicate prompt: {prompt_communicate}")
             _, resp_communicate = agent.communicate(prompt_communicate)
             logging.info(f"round {self.round} agent {agent.id} prompt communicate: {prompt_communicate}")
             logging.info(f"response: {resp_communicate}")
@@ -600,7 +600,7 @@ class EscapeSociety(Society):
                         dist_to_nearest_exit = dist
                         target_exit = exit
 
-            print("######## Agent", agent.id, "########\n", target_exit.pos)
+            # print("######## Agent", agent.id, "########\n", target_exit.pos)
             agent_state = {
                 'round': self.round,
                 'prompt1': prompt1,

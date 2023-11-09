@@ -1,4 +1,5 @@
 import os
+
 try:
     api_key = os.environ["OPENAI_API_KEY"]
 except:
@@ -6,6 +7,7 @@ except:
 
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 from src.emergency_evacuation.task1 import EscapeSociety as EscapeSociety_task1
 from src.emergency_evacuation.task2 import EscapeSociety as EscapeSociety_task2
@@ -87,15 +89,19 @@ def main(args):
         model="gpt-4-0314",
         api_key=api_key,
     )
-    step_count = 0
-    while True:
+    for step_count in tqdm(range(51), desc="Simulation Processing"):
         society.step()
         # society.render(society.human_list)
         society.render()
-        step_count += 1
         # print("count", count, society.cur_human_list)
-        if len(society.cur_human_list) == 0 or society.round > 50:
+        if len(society.cur_human_list) == 0:
             break
+    
+    if len(society.cur_human_list) == 0:
+        print("All humans escaped in advance!")
+
+    print("Simulation finished.")
+    print("Evaluation processing...")
     
     society.logging.info("Simulation finished.")
     society.logging.info("Total Round: %d", society.round)
@@ -118,6 +124,8 @@ def main(args):
             df = pd.DataFrame(columns=agent.state_history[0].keys())
             df = pd.concat([df, pd.DataFrame(agent.state_history)], ignore_index=True)
             df.to_csv(f"output/emergency_evacuation/task{args.task}/need_obstacle_{args.need_obstacle}/{args.num_humans}humans/is_panic_{args.is_panic}_seed{args.seed}/agent_chat_logs/agent{agent.id}_chat_history.csv", index=False)
+
+    print("Evaluation finished. Please check `output/` folder for the results.")
 
 if __name__ == "__main__":
     args = argparser.parse_args()

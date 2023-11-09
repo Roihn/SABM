@@ -538,7 +538,7 @@ class EscapeSociety(Society):
                         dist_to_nearest_exit = dist
                         target_exit = exit
 
-            print("######## Agent", agent.id, "########\n", target_exit.pos)
+            # print("######## Agent", agent.id, "########\n", target_exit.pos)
             agent_state = {
                 'round': self.round,
                 'prompt1': prompt1,

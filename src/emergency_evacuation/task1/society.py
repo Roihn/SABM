@@ -484,7 +484,7 @@ class EscapeSociety(Society):
                 agent.beta2 = values[1] / (10 * beta)
                 agent.beta3 = values[2] / (10 * beta)
 
-            print("######## Agent", agent.id, "########\n", prompt)
+            # print("######## Agent", agent.id, "########\n", prompt)
             agent_state = {
                 'round': self.round,
                 'beta1': resp_words[0],
