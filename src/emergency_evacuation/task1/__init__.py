@@ -1,0 +1,1 @@
+from .society import EscapeSociety

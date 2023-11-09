@@ -1,0 +1,4 @@
+numpy
+matplotlib
+pandas
+openai==0.27.1
