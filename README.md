@@ -26,9 +26,9 @@ pip install -r requirements.txt
 
 Please make sure you have the valid openai api key for GPT4. Otherwise, you may need to apply for one before you test our codes. 
 
-Two options are prepared for you to easily enter your api key with our codebase. You can choose either one of them, or both.
+Two options are prepared for you to easily apply your api key to our codebase. You can choose either one of them, or both.
 
-1. Setup envirionment variable
+1. Setup environment variable
 
     Run the following command in your terminal.
     
