@@ -281,7 +281,7 @@ def run_simulation(para_cost, para_a, para_d, para_beta, initial_price, load_dat
         n_communications = n_communications_noconversation
     
     # System Setup
-    output_path = f"Output/Record-{datetime.date.today().strftime('%y%m%d')}-{time.strftime('%H%M')}-{model_ver}"
+    output_path = f"output/pricing_competition/Record-{datetime.date.today().strftime('%y%m%d')}-{time.strftime('%H%M')}-{model_ver}"
     os.makedirs(output_path, exist_ok=True)
 
     # Theoretical Solution
@@ -302,7 +302,7 @@ def run_simulation(para_cost, para_a, para_d, para_beta, initial_price, load_dat
         market = Market(firms, rounds, n_communications)
 
         # Load Price History
-        df = pd.read_csv("./output/"+load_data+"/logs_decision_plot.csv")
+        df = pd.read_csv("output/pricing_competition/"+load_data+"/logs_decision_plot.csv")
 
         row1 = df[df['FirmID'] == 1]
         row2 = df[df['FirmID'] == 2]
@@ -327,7 +327,7 @@ def run_simulation(para_cost, para_a, para_d, para_beta, initial_price, load_dat
         # Load Strategy Data
         if strategy == True:
             strategy_list = []
-            with open("./output/"+load_data+"/logs_strategy.csv", 'r') as csvfile:
+            with open("output/pricing_competition/"+load_data+"/logs_strategy.csv", 'r') as csvfile:
                 reader = csv.reader(csvfile)
                 next(reader)
                 for row in reader:
