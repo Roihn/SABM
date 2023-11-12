@@ -117,10 +117,10 @@ class EscapeSociety(Society):
         self.is_panic = is_panic
         random_agent = random_agent if self.need_obstacle else True
         if random_agent:
-            self.output_path = f"output/reproduce_need_obstacle_{self.need_obstacle}/{self.num_humans}humans/is_panic_{self.is_panic}_seed{self.seed}"
+            self.output_path = f"output/emergency_evacuation/reproduce/need_obstacle_{self.need_obstacle}/{self.num_humans}humans/is_panic_{self.is_panic}_seed{self.seed}"
         else:
             self.num_humans = 66 * 4
-            self.output_path = f"output/reproduce_need_obstacle_{self.need_obstacle}/fixed_agent/is_panic_{self.is_panic}_seed{self.seed}"
+            self.output_path = f"output/emergency_evacuation/reproduce/need_obstacle_{self.need_obstacle}/fixed_agent/is_panic_{self.is_panic}_seed{self.seed}"
         os.makedirs(self.output_path, exist_ok=True)
         logging.basicConfig(filename=f"{self.output_path}/society.log", level=logging.INFO, filemode='w')
         logging.info(f"locals: {locals()}")
