@@ -74,7 +74,27 @@ Coming soon...
 
 ### Firm Pricing Competition
 
-Coming soon...
+To reproduce the results in the paper, please run the following command.
+
+```bash
+python main_firm_pricing_competition.py
+```
+
+We provide a GUI to set the parameters of the run.
+
+```bash
+python main_firm_pricing_competition.py --gui
+```
+
+If you choose to use command instead of the GUI to set the parameters for simulation, you may want to run the following command.
+The `<persona_firm>` parameter accepts one of the following options: [0, 1, 2]. Here, 0 indicates no persona, 1 represents an active persona, and 2 denotes an aggressive persona.
+
+```bash
+python main_firm_pricing_competition.py --model_version "gpt-4-0314" --rounds 1000 --output_max_tokens 100 --breakpoint_rounds 20 --persona_firm1 1 --persona_firm2 1 --set_initial_price --cost 2 2 --parameter_a 14 --parameter_d 0.00333333333333 --parameter_beta 0.00666666666666 --initial_price 2 2 --load_data_location "Record-231112-1955-gpt-4-0314" --strategy --has_conversation
+```
+
+> [!WARNING]  
+> This part of experiments consumes around $300 per trial because of the openai api usage. Please make sure you have enough allowance and have properly raise the usage limit before you test the code.
 
 ## Citation
 
