@@ -47,7 +47,7 @@ Two options are prepared for you to easily apply your api key to our codebase. Y
 ## Case Study
 
 > [!WARNING]
-> Estimated GPT cost for each case study has been attached aside the titles. Please make sure you have enough allowance and have properly raise the usage limit before you test the code.
+> Estimated GPT cost for each case study has been attached aside the titles. Please make sure you have enough allowance and have properly raised the usage limit before you test the code.
 
 ### Emergency Evacuation ![Static Badge](https://img.shields.io/badge/GPT-%2440%2Frun-green)
 
