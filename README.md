@@ -1,7 +1,7 @@
 # SABM
 
 This is the offical codebase for paper:
-**[Smart Agent-Based Modeling: On the Use of Large Language Models in Computer Simulations]()**. 
+**[Smart Agent-Based Modeling: On the Use of Large Language Models in Computer Simulations](https://arxiv.org/abs/2311.06330)**. 
 
 *Zengqing, Wu, Run Peng, Xu Han, Shuyuan Zheng, Yixin Zhang, Chuan Xiao.* 2023. 
 
@@ -99,9 +99,12 @@ python main_firm_pricing_competition.py --model_version "gpt-4-0314" --rounds 10
 If you find our work useful, please give us credit by citing:
 
 ```bibtex
-@article{wu2023smart,
-  title={Smart Agent-Based Modeling: On the Use of Large Language Models in Computer Simulations},
-  author={Wu, Zengqing and Peng, Run and Han, Xu and Zheng, Shuyuan and Zhang, Yixin and Xiao, Chuan},
-  year={2023}
+@misc{wu2023smart,
+      title={Smart Agent-Based Modeling: On the Use of Large Language Models in Computer Simulations}, 
+      author={Zengqing Wu and Run Peng and Xu Han and Shuyuan Zheng and Yixin Zhang and Chuan Xiao},
+      year={2023},
+      eprint={2311.06330},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
 }
 ```
