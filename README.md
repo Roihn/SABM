@@ -41,8 +41,7 @@ Two options are prepared for you to easily apply your api key to our codebase. Y
     
     This is a one-step setup. You only need to paste your api key in the `apikey.token` file. Then, you can test our codes without any extra setup.
 
-    > [!WARNING]  
-    > Please do not commit your api key to github, or share it with anyone online.
+    ***Please do not commit your api key to github, or share it with anyone online.**
 
 ## Case Study
 
