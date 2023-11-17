@@ -30,7 +30,7 @@ program_run_dict = {
 rounds = 100000
 n_communications_noconversation = 1
 n_communications_conversation = 3
-output_max_tokens = 100
+output_max_tokens = 128
 breakpoint_rounds = 200
 prev_n_rounds = 20
 ## Agent Persona
