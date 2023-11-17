@@ -3,7 +3,7 @@ import os
 try:
     api_key = os.environ["OPENAI_API_KEY"]
 except:
-    api_key = open('apikey.token').readlines()[0][:-1]
+    api_key = open('apikey.token').readline().strip()
 
 import numpy as np
 import pandas as pd
