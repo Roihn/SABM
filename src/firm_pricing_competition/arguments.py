@@ -7,7 +7,7 @@ argparser.set_defaults(gui=False)
 
 argparser.add_argument("--model_version", type=str, default='gpt-4-0314')
 argparser.add_argument("--rounds", type=int, default=1000)
-argparser.add_argument("--output_max_tokens", type=int, default=100)
+argparser.add_argument("--output_max_tokens", type=int, default=128)
 argparser.add_argument("--breakpoint_rounds", type=int, default=20)
 argparser.add_argument("--persona_firm1", type=int, default=1)
 argparser.add_argument("--persona_firm2", type=int, default=1)
