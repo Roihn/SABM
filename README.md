@@ -48,7 +48,7 @@ Two options are prepared for you to easily apply your api key to our codebase. Y
 > [!WARNING]
 > Estimated GPT cost for each case study has been attached aside the titles. Please make sure you have enough allowance and have properly raised the usage limit before you test the code.
 
-### Emergency Evacuation ![Static Badge](https://img.shields.io/badge/GPT-%2410%2Frun-green)
+### Emergency Evacuation ![Static Badge](https://img.shields.io/badge/GPT-%2440%2Frun-green)
 
 
 To reproduce the results in the paper, please run the following command.
@@ -66,7 +66,7 @@ python main_emergency_evacuation.py --task <task_id> --seed <seed> --num_humans 
 ```
 
 
-### Plea Bargaining ![Static Badge](https://img.shields.io/badge/GPT-%2440%2Frun-green)
+### Plea Bargaining ![Static Badge](https://img.shields.io/badge/GPT-%2410%2Frun-green)
 
 To reproduce the results in the paper, please run the following command.
 
