@@ -81,8 +81,11 @@ python main_plea_bargain.py --gui
 ```
 
 If you choose to use command instead of the GUI to set the parameters for simulation, you may want to run the following command.
+
 The `<persona>` can be "persona" or "nopersona", indicating whether or not the persona is used in the performance of plea bargaining.
+
 The `<no_fewshot>` option indicates not to provide a few-shot context to the agent in the plea bargain.
+
 The `<task>` can be one of the following options: [1, 2, 3]. Each task id corresponds to a specific case study in the paper.
 
 ```bash
