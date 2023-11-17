@@ -48,7 +48,7 @@ Two options are prepared for you to easily apply your api key to our codebase. Y
 > [!WARNING]
 > Estimated GPT cost for each case study has been attached aside the titles. Please make sure you have enough allowance and have properly raised the usage limit before you test the code.
 
-### Emergency Evacuation ![Static Badge](https://img.shields.io/badge/GPT-%2440%2Frun-green)
+### Emergency Evacuation ![Static Badge](https://img.shields.io/badge/GPT-%2410%2Frun-green)
 
 
 To reproduce the results in the paper, please run the following command.
@@ -66,9 +66,28 @@ python main_emergency_evacuation.py --task <task_id> --seed <seed> --num_humans 
 ```
 
 
-### Plea Bargaining
+### Plea Bargaining ![Static Badge](https://img.shields.io/badge/GPT-%2440%2Frun-green)
 
-Coming soon...
+To reproduce the results in the paper, please run the following command.
+
+```bash
+python main_plea_bargain.py
+```
+
+We provide a GUI to set the parameters of the run.
+
+```bash
+python main_plea_bargain.py --gui
+```
+
+If you choose to use command instead of the GUI to set the parameters for simulation, you may want to run the following command.
+The `<persona>` can be "persona" or "nopersona", indicating whether or not the persona is used in the performance of plea bargaining.
+The `<no_fewshot>` option indicates not to provide a few-shot context to the agent in the plea bargain.
+The `<task>` can be one of the following options: [1, 2, 3]. Each task id corresponds to a specific case study in the paper.
+
+```bash
+python main_plea_bargain.py --model_version "gpt-4-0314" --tcu_test --persona "nopersona" --no_fewshot --output_max_tokens 100 --num_agents 1 --task 1
+```
 
 ### Firm Pricing Competition ![Static Badge](https://img.shields.io/badge/GPT-%24300%2Frun-red)
 
