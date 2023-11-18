@@ -1,4 +1,4 @@
-# SABM
+# Smart Agent-Based Modeling (SABM)
 
 This is the offical codebase for paper:
 **[Smart Agent-Based Modeling: On the Use of Large Language Models in Computer Simulations](https://arxiv.org/abs/2311.06330)**. 
@@ -48,6 +48,28 @@ Two options are prepared for you to easily apply your api key to our codebase. Y
 > [!WARNING]
 > Estimated GPT cost for each case study has been attached aside the titles. Please make sure you have enough allowance and have properly raised the usage limit before you test the code.
 
+### Number Guessing Game ![Static Badge](https://img.shields.io/badge/GPT-%240.01%2Frun-green)
+
+To reproduce the results in the paper, please run the following command.
+
+```bash
+python main_number_guessing.py
+```
+
+You can specify additional parameters to reproduce the results of the paper.
+
+The `<persona>` can be "default" (no persona), "aggressive", or "conservative".
+
+The `<advanced>` option is used to specify advanced agent modeling options, including "domain_knowledge", "learning", "reasoning", "planning", and "hint" (conversation) discussed in the paper.
+
+The `<set_guess_number>` is used to guess a fixed number.
+
+The `<interpretation_guess>` is used for model interpretation.
+
+```bash
+python main_number_guessing.py --model_version "gpt-4-0613" --persona "conservative" --advanced "domain_knowledge" --set_guess_number --interpretation_guess
+```
+
 ### Emergency Evacuation ![Static Badge](https://img.shields.io/badge/GPT-%2440%2Frun-green)
 
 
@@ -92,7 +114,7 @@ The `<task>` can be one of the following options: [1, 2, 3]. Each task id corres
 python main_plea_bargain.py --model_version "gpt-4-0314" --tcu_test --persona "nopersona" --no_fewshot --output_max_tokens 100 --num_agents 1 --task 1
 ```
 
-### Firm Pricing Competition ![Static Badge](https://img.shields.io/badge/GPT-%24300%2Frun-red)
+### Firm Pricing Competition ![Static Badge](https://img.shields.io/badge/GPT-%24200%2Frun-red)
 
 
 To reproduce the results in the paper, please run the following command.
