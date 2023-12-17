@@ -6,6 +6,8 @@ api_key = "sk-"
 persona_type = "default"
 
 fixed_guess_number = False
+api_type = "openai"
+api_base = ""
 interpretation_guess = False
 advanced_settings = "default"
 model_ver = 'gpt-4-0613'
@@ -13,8 +15,8 @@ model_ver = 'gpt-4-0613'
 # Simulation
 def simulation():
     # Agent setup
-    agent1 = GPT.Agent(temperature = 0.5, model= model_ver, max_tokens = 128, api_key = api_key)
-    agent2 = GPT.Agent(temperature = 0.5, model= model_ver, max_tokens = 128, api_key = api_key)
+    agent1 = GPT.Agent(temperature = 0.5, model= model_ver, max_tokens = 128, api_key = api_key, api_type = api_type, api_base = api_base)
+    agent2 = GPT.Agent(temperature = 0.5, model= model_ver, max_tokens = 128, api_key = api_key, api_type = api_type, api_base = api_base)
 
     # Generate target number
     if fixed_guess_number == False:

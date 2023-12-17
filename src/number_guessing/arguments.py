@@ -10,4 +10,8 @@ argparser.set_defaults(set_guess_number=False)
 
 argparser.add_argument("--interpretation_guess", dest='interpretation_guess', action='store_true')
 argparser.set_defaults(interpretation_guess=False)
+
+argparser.add_argument("--api_type", type=str, default='openai')
+argparser.add_argument("--api_base", type=str, default='')
+
 argparser.add_argument("--advanced", type=str, default='default')
