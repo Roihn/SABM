@@ -5,9 +5,6 @@ This is the offical codebase for paper:
 
 *Zengqing, Wu, Run Peng, Xu Han, Shuyuan Zheng, Yixin Zhang, Chuan Xiao.* 2023. 
 
-> [!NOTE] 
-> This codebase is lively under construction!
-
 ## Setup
 
 ### Environment
